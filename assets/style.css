@@ -8,11 +8,15 @@ html {
 	--theme-color: #ff7b26;
 }
 body {
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
 	margin-left: 10%;
+	background-color: #fff;
 	padding: 4rem 0 0.25rem;
 	width: min(80%, 1024px);
+	color: #333;
 }
-
 a {
 	color: var(--theme-color);
 	text-decoration: none;
@@ -20,7 +24,6 @@ a {
 a:hover {
 	text-decoration: solid;
 }
-
 nav {
 	display: flex;
 	position: fixed;
@@ -40,7 +43,6 @@ nav {
 	margin-right: 0.5rem;
 	height: 3rem;
 }
-
 nav a,
 h1 a {
 	color: inherit;
@@ -49,7 +51,6 @@ h1 a:hover {
 	color: var(--theme-color);
 	text-decoration: none;
 }
-
 .author-info {
 	display: flex;
 	align-items: center;
@@ -77,4 +78,20 @@ h1 a:hover {
 }
 .socials a:not(:hover) path:first-child {
 	fill: #777;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--theme-color: #ff9249;
+	}
+	body {
+		background-color: #121212;
+		color: #e0e0e0;
+	}
+	h1 a:hover {
+		color: var(--theme-color);
+	}
+	.socials a:not(:hover) path:first-child {
+		fill: #aaa;
+	}
 }
