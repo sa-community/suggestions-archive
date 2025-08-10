@@ -8,7 +8,7 @@ pagination:
     per_page: 100
     filters:
         where_exp:
-            item, "item.answer !~ '^Implemented|Incompatible|Impractical|Rejected|Impossible$'"
+            item, "item.answer !~ '^(?:Implemented|Incompatible|Impractical|Rejected|Impossible)$'"
 ---
 
 <h1>Top Scratch Addons Suggestions</h1>
@@ -44,8 +44,8 @@ pagination:
 					Discord server.
 				</li>
 				<li>
-					Suggestions from both the newer suggestions form channel and the
-					pre-October-2022 bot-managed channel were ported. Form suggestions have the
+					Suggestions from both the newer suggestions forum channel and the
+					pre-October-2022 bot-managed channel were ported. Forum suggestions have the
 					<img
 						class="discord-custom-emoji"
 						src="{{ site.data.emojis[':potato_upvote:'] }}"
@@ -72,8 +72,8 @@ pagination:
 			<ul>
 				<li>
 					To (re-)answer a suggestion. Rejected and implemented suggestions are hidden
-					from suggestion lists, but the actual suggestion page will remain as to not
-					break links.
+					from suggestion lists, but the actual suggestion page will remain so links are
+					not broken.
 				</li>
 				<li>To clarify a suggestion title if the original one is too ambiguous.</li>
 				<li>To add a user's Scratch or GitHub account to their author page.</li>
