@@ -1,7 +1,7 @@
 title: Scratch Addons Suggestions
 description: Suggestions for Scratch Addons taken from the old community Discord server
-baseurl: "/suggestions-archive"
-url: "https://scratchaddons-community.github.io"
+baseurl: /suggestions-archive
+url: https://scratchaddons-community.github.io
 
 plugins:
     - jekyll-paginate-v2
@@ -14,17 +14,17 @@ collections:
 defaults:
     - scope:
           path: ""
-          type: "suggestions"
+          type: suggestions
       values:
-          layout: "suggestion"
+          layout: suggestion
     - scope:
-          path: "author"
+          path: author
       values:
-          layout: "author"
+          layout: author
     - scope:
           path: ""
       values:
-          layout: "default"
+          layout: default
 
 pagination:
     enabled: true
